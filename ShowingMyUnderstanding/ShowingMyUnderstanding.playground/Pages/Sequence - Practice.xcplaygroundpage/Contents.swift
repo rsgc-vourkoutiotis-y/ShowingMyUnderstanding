@@ -70,6 +70,32 @@ canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 canvas.drawEllipse(centreX: 150, centreY: 75, width: 70, height: 70)
 
+//make black spike
+
+
+canvas.drawLine(fromX: 125, fromY: 100, toX: 150, toY: 150)
+
+canvas.drawLine(fromX: 175, fromY: 100, toX: 150, toY: 150)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
