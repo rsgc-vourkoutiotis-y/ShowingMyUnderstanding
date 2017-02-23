@@ -28,7 +28,7 @@
  * be sure you *forked* and then cloned this repository
  * commit your work every time you make progress toward completing the assignment
  
- **Due date:** The assignment is due, without exception, by the start of our next class (Monday, March 27, 2017).
+ **Due date:** The assignment is due, without exception, by the start of our next class (Monday, February 27, 2017).
  
  Let's get started!
 
