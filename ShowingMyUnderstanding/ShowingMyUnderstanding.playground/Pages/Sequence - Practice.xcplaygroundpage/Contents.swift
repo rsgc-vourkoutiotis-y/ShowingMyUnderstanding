@@ -29,7 +29,60 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+
+// Make Blue Circles...
+
+canvas.drawShapesWithBorders = false
+
+canvas.drawShapesWithFill = true
+
+canvas.defaultBorderWidth = 5
+
+canvas.fillColor = Color(hue: 190, saturation: 100, brightness: 100, alpha: 100)
+
+canvas.drawEllipse(centreX: 75, centreY: 225, width: 70, height: 70)
+
+canvas.drawEllipse(centreX: 75, centreY: 75, width: 70, height: 70)
+
+// Make Red Circles
+
+canvas.drawShapesWithBorders = false
+
+canvas.drawShapesWithFill = true
+
+canvas.defaultBorderWidth = 5
+
+canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 100, alpha: 100)
+
+canvas.drawEllipse(centreX: 225, centreY: 225, width: 70, height: 70)
+
+canvas.drawEllipse(centreX: 225, centreY: 75, width: 70, height: 70)
+
+// Make Black Circle
+
+canvas.drawShapesWithBorders = false
+
+canvas.drawShapesWithFill = true
+
+canvas.defaultBorderWidth = 5
+
+canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
+
+canvas.drawEllipse(centreX: 150, centreY: 75, width: 70, height: 70)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*:
