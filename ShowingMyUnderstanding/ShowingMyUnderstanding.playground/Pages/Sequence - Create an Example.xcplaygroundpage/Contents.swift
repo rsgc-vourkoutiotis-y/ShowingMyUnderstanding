@@ -45,32 +45,54 @@ let canvas = Canvas(width: 300, height: 300)
 
 ////CONDITONALS PRACTICE
 // Generate a random number
+//var number = random(from: 0, toButNotIncluding: 2)
+//
+//// Replace this comment and add your code below...
+//
+//if number == 0 {
+//    canvas.drawShapesWithBorders = true
+//    
+//    canvas.drawShapesWithFill = false
+//    
+//    canvas.defaultBorderWidth = 5
+//    
+//    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
+//    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+//}
+//    
+//    
+//else {
+//    canvas.drawShapesWithBorders = false
+//    
+//    canvas.drawShapesWithFill = true
+//    
+//    canvas.defaultBorderWidth = 5
+//    
+//    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
+//    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+//}
+
+/////CONDITONAL EXAMPLE
+// If number = 0, then draw line to (100,150)
+// If number = 1, then draw line to (200,150)
+
+// Generate a random number
 var number = random(from: 0, toButNotIncluding: 2)
 
-// Replace this comment and add your code below...
 
 if number == 0 {
-    canvas.drawShapesWithBorders = true
     
-    canvas.drawShapesWithFill = false
-    
-    canvas.defaultBorderWidth = 5
-    
-    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
-    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+    canvas.drawLine(fromX: 0, fromY: 150, toX: 100, toY: 150)
 }
-    
-    
+
+
 else {
-    canvas.drawShapesWithBorders = false
-    
-    canvas.drawShapesWithFill = true
-    
-    canvas.defaultBorderWidth = 5
-    
-    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
-    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+   
+    canvas.drawLine(fromX: 0, fromY: 150, toX: 200, toY: 150)
 }
+
+
+
 
 
 
