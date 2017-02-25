@@ -30,7 +30,7 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 
-// Make Blue Circles...
+// set colour for blue circles
 
 canvas.drawShapesWithBorders = false
 
@@ -41,18 +41,14 @@ canvas.defaultBorderWidth = 5
 canvas.fillColor = Color(hue: 190, saturation: 100, brightness: 100, alpha: 100)
 
 
-
-canvas.drawEllipse(centreX: 75, centreY: 75, width: 70, height: 70)
-
-// loop blue circles using x as a variable
+// loop blue circles using x as a variable (vertical)
 
 for x in stride(from: 75, through: 150, by: 10) {
     canvas.drawEllipse(centreX: 75, centreY: x, width: 70, height: 70)
 }
 
 
-// Make Red Circles
-
+// set colour for red circles
 canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
@@ -61,17 +57,13 @@ canvas.defaultBorderWidth = 5
 
 canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 100, alpha: 100)
 
-
-
-canvas.drawEllipse(centreX: 225, centreY: 75, width: 70, height: 70)
-
-// loop red circles using x as a variable
+// loop red circles using x as a variable (vertical)
 
 for x in stride(from: 75, through: 150, by: 10) {
     canvas.drawEllipse(centreX: 225, centreY: x, width: 70, height: 70)
 }
 
-// loop blue circles to black circle
+// loop blue circles slanted to the center using x as the variable
 
 canvas.fillColor = Color(hue: 190, saturation: 100, brightness: 100, alpha: 100)
 
@@ -79,15 +71,14 @@ for x in stride(from: 75, through: 150, by: 10) {
     canvas.drawEllipse(centreX: 225-x, centreY: x, width: 70, height: 70)
 }
 
-// loop red circles to black circle
-
+// loop red circles slanted to the center using x as the variable
 canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 100, alpha: 100)
 
 for x in stride(from: 75, through: 150, by: 10) {
     canvas.drawEllipse(centreX: 75+x, centreY: x, width: 70, height: 70)
 }
 
-// Make Black Circle
+// make grey center dot
 
 canvas.drawShapesWithBorders = false
 
@@ -95,19 +86,19 @@ canvas.drawShapesWithFill = true
 
 canvas.defaultBorderWidth = 5
 
-canvas.fillColor = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
+canvas.fillColor = Color(hue: 50, saturation: 0, brightness: 25, alpha: 100)
 
 canvas.drawEllipse(centreX: 150, centreY: 75, width: 70, height: 70)
 
-//make black spike
+// make grey spikes using x as a variable
 
 
-canvas.drawLine(fromX: 125, fromY: 100, toX: 150, toY: 127)
-
-canvas.drawLine(fromX: 175, fromY: 100, toX: 150, toY: 127)
-
-
-
+for x in stride(from: 125, through: 175, by: 1) {
+    
+    canvas.lineColor = Color(hue: 50, saturation: 0, brightness: 25, alpha: 100)
+    
+    canvas.drawLine(fromX: x, fromY: 100, toX: 150, toY: 125)
+}
 
 
 
