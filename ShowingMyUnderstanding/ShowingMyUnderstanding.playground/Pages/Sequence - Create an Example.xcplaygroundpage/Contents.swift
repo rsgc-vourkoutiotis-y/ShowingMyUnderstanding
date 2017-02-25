@@ -45,10 +45,11 @@ let canvas = Canvas(width: 300, height: 300)
 
 ////CONDITONALS PRACTICE
 // Generate a random number
+//use an assignment statement
 //var number = random(from: 0, toButNotIncluding: 2)
 //
 //// Replace this comment and add your code below...
-//
+//use comparison operator
 //if number == 0 {
 //    canvas.drawShapesWithBorders = true
 //    
@@ -72,24 +73,60 @@ let canvas = Canvas(width: 300, height: 300)
 //    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
 //}
 
-/////CONDITONAL EXAMPLE
-// If number = 0, then draw line to (100,150)
-// If number = 1, then draw line to (200,150)
+///////CONDITONAL EXAMPLE
+//// If number = 0, then draw line to (100,150)
+//// If number = 1, then draw line to (200,150)
+//
+//// Generate a random number
+//var number = random(from: 0, toButNotIncluding: 2)
+//
+//
+//if number == 0 {
+//    
+//    canvas.drawLine(fromX: 0, fromY: 150, toX: 100, toY: 150)
+//}
+//
+//
+//else {
+//   
+//    canvas.drawLine(fromX: 0, fromY: 150, toX: 200, toY: 150)
+//}
 
-// Generate a random number
-var number = random(from: 0, toButNotIncluding: 2)
 
+///ITERATION PRACTICE
 
-if number == 0 {
-    
-    canvas.drawLine(fromX: 0, fromY: 150, toX: 100, toY: 150)
+// make the first line looping
+
+canvas.defaultLineWidth = 10
+
+for x in stride(from: 0, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 225, toX: 25+x, toY: 225)
 }
 
-
-else {
-   
-    canvas.drawLine(fromX: 0, fromY: 150, toX: 200, toY: 150)
+for x in stride(from: 25, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 200, toX: 25+x, toY: 200)
 }
+
+// make second line of loops
+
+for x in stride(from: 0, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 150, toX: 25+x, toY: 150)
+}
+
+for x in stride(from: 25, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 125, toX: 25+x, toY: 125)
+}
+
+// make third line of loops
+
+for x in stride(from: 0, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 75, toX: 25+x, toY: 75)
+}
+
+for x in stride(from: 25, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 50, toX: 25+x, toY: 50)
+}
+
 
 
 
