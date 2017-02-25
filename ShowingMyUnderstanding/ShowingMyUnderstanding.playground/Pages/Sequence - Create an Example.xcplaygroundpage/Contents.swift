@@ -23,11 +23,20 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+// loop ellipses
 
+canvas.drawShapesWithBorders = false
 
+canvas.drawShapesWithFill = true
 
+canvas.defaultBorderWidth = 5
 
+for x in stride(from: 100, through: 200, by: 25) {
+    
+    canvas.fillColor = Color(hue: x, saturation: 100, brightness: 100, alpha: 50)
+    
+    canvas.drawEllipse(centreX: x, centreY: 150, width: 50, height: 50)
+}
 
 
 
