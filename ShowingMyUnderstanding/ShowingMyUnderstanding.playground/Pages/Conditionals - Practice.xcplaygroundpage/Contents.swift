@@ -27,10 +27,45 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+
+
 // Generate a random number
-let number = random(from: 0, toButNotIncluding: 2)
+var number = random(from: 0, toButNotIncluding: 2)
 
 // Replace this comment and add your code below...
+
+if number == 0 {
+    canvas.drawShapesWithBorders = true
+    
+    canvas.drawShapesWithFill = false
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+}
+
+
+else {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+}
+
+
+
+
+
+
+
+
+
+
 
 /*:
  ## Template code

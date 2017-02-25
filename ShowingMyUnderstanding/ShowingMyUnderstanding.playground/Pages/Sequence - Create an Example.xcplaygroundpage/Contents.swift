@@ -20,29 +20,57 @@
 import Cocoa
 import PlaygroundSupport
 
-// Create canvas
+
+//// Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// loop ellipses
+///SEQUENCE EXAMPLE
+//// loop ellipses
+//
+//canvas.drawShapesWithBorders = false
+//
+//canvas.drawShapesWithFill = true
+//
+//canvas.defaultBorderWidth = 5
+//
+//for x in stride(from: 100, through: 200, by: 25) {
+//    
+//    canvas.fillColor = Color(hue: x, saturation: 100, brightness: 100, alpha: 50)
+//    
+//    canvas.drawEllipse(centreX: x, centreY: 150, width: 50, height: 50)
+//}
+//
+//
+//
 
-canvas.drawShapesWithBorders = false
+////CONDITONALS PRACTICE
+// Generate a random number
+var number = random(from: 0, toButNotIncluding: 2)
 
-canvas.drawShapesWithFill = true
+// Replace this comment and add your code below...
 
-canvas.defaultBorderWidth = 5
-
-for x in stride(from: 100, through: 200, by: 25) {
+if number == 0 {
+    canvas.drawShapesWithBorders = true
     
-    canvas.fillColor = Color(hue: x, saturation: 100, brightness: 100, alpha: 50)
+    canvas.drawShapesWithFill = false
     
-    canvas.drawEllipse(centreX: x, centreY: 150, width: 50, height: 50)
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
 }
-
-
-
-
-
-
+    
+    
+else {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: 100, saturation: 100, brightness: 100, alpha: 100)
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
+}
 
 
 
