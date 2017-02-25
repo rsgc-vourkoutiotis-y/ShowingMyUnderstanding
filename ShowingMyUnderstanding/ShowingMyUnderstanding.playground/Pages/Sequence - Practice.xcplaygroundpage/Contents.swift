@@ -44,6 +44,13 @@ canvas.drawEllipse(centreX: 75, centreY: 225, width: 70, height: 70)
 
 canvas.drawEllipse(centreX: 75, centreY: 75, width: 70, height: 70)
 
+// loop blue circles using x as a variable
+
+for x in stride(from: 75, through: 225, by: 10) {
+    canvas.drawEllipse(centreX: 75, centreY: x, width: 70, height: 70)
+}
+
+
 // Make Red Circles
 
 canvas.drawShapesWithBorders = false
