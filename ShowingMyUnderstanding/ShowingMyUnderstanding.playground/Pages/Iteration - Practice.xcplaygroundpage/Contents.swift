@@ -29,12 +29,37 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+// make the first line looping
 
+canvas.defaultLineWidth = 10
 
+for x in stride(from: 0, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 225, toX: 25+x, toY: 225)
+}
 
+for x in stride(from: 25, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 200, toX: 25+x, toY: 200)
+}
 
+// make second line of loops
 
+for x in stride(from: 0, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 150, toX: 25+x, toY: 150)
+}
+
+for x in stride(from: 25, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 125, toX: 25+x, toY: 125)
+}
+
+// make third line of loops
+
+for x in stride(from: 0, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 75, toX: 25+x, toY: 75)
+}
+
+for x in stride(from: 25, through: 300, by: 50) {
+    canvas.drawLine(fromX: x, fromY: 50, toX: 25+x, toY: 50)
+}
 
 
 
