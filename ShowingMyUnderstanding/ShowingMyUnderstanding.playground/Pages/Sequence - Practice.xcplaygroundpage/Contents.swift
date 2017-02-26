@@ -66,7 +66,7 @@ for x in stride(from: 75, through: 150, by: 10) {
 // loop blue circles slanted to the center using x as the variable
 
 canvas.fillColor = Color(hue: 190, saturation: 100, brightness: 100, alpha: 100)
-
+//arithmetic operator
 for x in stride(from: 75, through: 150, by: 10) {
     canvas.drawEllipse(centreX: 225-x, centreY: x, width: 70, height: 70)
 }
