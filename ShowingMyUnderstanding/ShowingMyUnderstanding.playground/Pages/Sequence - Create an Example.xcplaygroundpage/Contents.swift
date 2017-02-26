@@ -130,16 +130,133 @@ let canvas = Canvas(width: 300, height: 300)
 
 //ITERATION EXAMPLE
 
-// make first line of ellipses
+//// make first line of ellipses
+//
+//for x in stride(from: 25, through: 300, by: 50) {
+//    canvas.drawEllipse(centreX: 100, centreY: x, width: 20, height: 20)
+//}
+//
+//// make second line of ellipses
+//
+//for x in stride(from: 25, through: 300, by: 50) {
+//    canvas.drawEllipse(centreX: 200, centreY: x, width: 20, height: 20)
+//}
 
-for x in stride(from: 25, through: 300, by: 50) {
-    canvas.drawEllipse(centreX: 100, centreY: x, width: 20, height: 20)
+//PUT IT ALL TOGETHER
+
+//Generates a random number of dots in 1 random colour in a box
+
+// make the border...
+
+canvas.defaultLineWidth = 5
+
+canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 270)
+
+canvas.drawLine(fromX: 50, fromY: 270, toX: 250, toY: 270)
+
+canvas.drawLine(fromX: 250, fromY: 270, toX: 250, toY: 50)
+
+canvas.drawLine(fromX: 250, fromY: 50, toX: 50, toY: 50)
+
+// Generate a random number
+// use an assignment statement
+// use number as a variable
+var number = random(from: 1, toButNotIncluding: 7)
+
+// make 1 dot
+//use comparison operator
+// conditional statement
+if number == 1 {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+// used arithmetic operator for colour
+canvas.fillColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+    
+    canvas.drawEllipse(centreX: 150, centreY: 81, width: 20, height: 20)
 }
 
-// make second line of ellipses
+//make 2 dots with a loop
+// sequence of dots
 
-for x in stride(from: 25, through: 300, by: 50) {
-    canvas.drawEllipse(centreX: 200, centreY: x, width: 20, height: 20)
+if number == 2 {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+// iteration example
+for x in stride(from: 81, through: 112, by: 31) {
+    canvas.drawEllipse(centreX: 150, centreY: x, width: 20, height: 20)
+    }
+}
+
+// make 3 dots with a loop
+
+if number == 3 {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+    
+    for x in stride(from: 81, through: 143, by: 31) {
+        canvas.drawEllipse(centreX: 150, centreY: x, width: 20, height: 20)
+    }
+}
+
+// make 4 dots with a loop
+
+if number == 4 {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+    
+    for x in stride(from: 81, through: 174, by: 31) {
+        canvas.drawEllipse(centreX: 150, centreY: x, width: 20, height: 20)
+    }
+}
+
+// make 5 dots with a loop
+
+if number == 5 {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+    
+    for x in stride(from: 81, through: 205, by: 31) {
+        canvas.drawEllipse(centreX: 150, centreY: x, width: 20, height: 20)
+    }
+}
+
+// make 6 dots with a loop
+
+if number == 6 {
+    canvas.drawShapesWithBorders = false
+    
+    canvas.drawShapesWithFill = true
+    
+    canvas.defaultBorderWidth = 5
+    
+    canvas.fillColor = Color(hue: number * 60, saturation: 100, brightness: 100, alpha: 100)
+    
+    for x in stride(from: 81, through: 236, by: 31) {
+        canvas.drawEllipse(centreX: 150, centreY: x, width: 20, height: 20)
+    }
 }
 
 
